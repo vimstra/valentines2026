@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    cursor: url("normal.cur"), auto;
+}
+
+.background-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 210, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(216, 80, 80);
+}
+
+.hearts {
+    color: rgb(250, 190, 201);
+    font-size: 3rem;
+    position: fixed;
+    top: -1vh;
+    animation: fall 5s ease-in;
+    left: 0;
+    z-index: 0;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+.card-container {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(250, 190, 201);
+    height: 40%;
+    width: 20%;
+    border-radius: 30px;
+    border: solid 3px rgb(216, 80, 80);
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.gif {
+    height: 150px;
+    margin: 60px;
+}
+
+.certificate {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    font-family: "Pixelify Sans", sans-serif;
+    color: rgb(216, 80, 80);
+    font-size: 1.5rem;
+    font-weight: bold;
+    appearance: none;
+    border: solid 3px rgb(216, 80, 80);
+    border-radius: 20px;
+    padding: 5px 40px 5px 40px;
+    margin: 10px;
+    cursor: url("click.cur"), auto;
+    border-bottom: solid 6px rgb(216, 80, 80);
+}
+
+button:hover {
+    color: rgb(255, 210, 218);
+    background-color: rgb(216, 80, 80);
+}
