@@ -51,14 +51,13 @@ noBtn.addEventListener("click", () => {
     gif.src = path;
     header.textContent = messages[count - 1];
 
-    let randomLeft = randomIntFromInterval(20, 80); // 90 to keep it on screen
-    let randomTop = randomIntFromInterval(20, 80);
+   let randomLeft = randomIntFromInterval(10, 70);
+let randomTop = randomIntFromInterval(10, 70);
 
-    noBtn.style.position = "absolute";
-    noBtn.style.left = `${randomLeft}vw`;
-    noBtn.style.top = `${randomTop}vh`;
-    noBtn.style.transform = `scale(${scale})`;
-
+noBtn.style.position = "fixed";
+noBtn.style.left = `${randomLeft}vw`;
+noBtn.style.top = `${randomTop}vh`;
+noBtn.style.transform = `scale(${scale})`;
     if (count == messages.length) {
         gif.src = "gifs/final.gif";
         header.textContent = "Actually, the 'No' button was just for show, we're getting married.";
@@ -68,3 +67,4 @@ noBtn.addEventListener("click", () => {
         }, 4000);
     }
 });
+
