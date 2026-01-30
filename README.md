@@ -7,6 +7,7 @@ It'd be good if they were at least a lttle tiny bit interested in you (if you we
 ## 2. Send the card
 Send them the following link: https://vimstra.github.io/valentines2026/ 
 Stay mysterious. Say nothing, wait for the answer.
+(and yes, it works ona phone too)
 
 
 ## 3a. If they replied 'yes'
